@@ -1,0 +1,16 @@
+admin 
+    edit navbar+subnav
+    custom homepage
+    create account-> limit time access
+    delete account
+    create test/training excerises/answer
+    edit test/training excerises/answer
+    delete test/training excerises
+    ranking scrores
+    check multiple choice score
+    check voice record 
+    upload listening file / scripts
+    check writing essay
+    
+    
+    

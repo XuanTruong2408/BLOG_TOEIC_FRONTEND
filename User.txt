@@ -1,0 +1,17 @@
+	- TOEIC - ETS 2020
+	- Tài khoản (chỉ có khách hàng được tạo)
+	- Có thời gian làm bài, hết time thì đóng link
+	- Thu âm (đếm giờ khi click bắt đầu
+	- Thu bài viết --> file excel/word (thao tác được)
+	- Reading&listening: hiêển thị thanh câu hỏi
+	- Có chú thích câu hỏi
+		○ Một trang có thể có nhiều câu hỏi
+		○ Có thông báo đang ở câu nào
+		○ Đề thi: chỉ được next 
+		○ Đề luyện tập: có thể bỏ qua câu hỏi để làm những câu khác
+	- Tạo Form để làm đề th
+	- Thanh navbar: 
+		○ đề thi, đề luyện tập, khoá học, trang chủ, liên hệ, hỏi đáp, login
+		○ Click vào đề thi và đề luyện tập thì thông báo đăng nhập
+	- Đề luyện tập tạo phần check đáp án
+	- Tạo phần đánh giá bài làm

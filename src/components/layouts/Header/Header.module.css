@@ -1,0 +1,29 @@
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    top: 0;
+    height: auto;
+    background-color: #98c5e9;
+    position: static;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.Login{
+    text-decoration: none;
+}
+.Login:hover{
+    text-decoration: none;
+    color: white;
+}
+.header{
+    top: 0;
+    height: auto;
+    background-color: #98c5e9;
+    position: static;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
