@@ -2,7 +2,7 @@ import React from 'react'
 
 const Exam = ()=> {
     return(
-        <h1>Trang đề thi</h1>
+        <h1>Các đề thi</h1>
     )
 }
 

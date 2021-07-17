@@ -10,14 +10,12 @@ import Exam from './Pages/Exam/Exam';
 import Login from './Pages/Login/Login';
 import Practice from './Pages/Practice/Practice';
 import Quest from './Pages/Quest/Quest';
-import Errors from './Pages/Error/Error';
 
 
 const App = () => {
     return (
       <Router>
           <Headers />
-          <div>
             <Switch>
               <Route exact path='/'> 
                   <Home /> 
@@ -28,7 +26,7 @@ const App = () => {
               <Route exact path='/exam'> 
                   <Exam /> 
               </Route>
-              <Route exact path='/courses'> 
+              <Route exact path='/courses/:id'> 
                   <Courses /> 
               </Route>
               <Route exact path='/login'> 
@@ -41,10 +39,9 @@ const App = () => {
                   <Quest/> 
               </Route>
               <Route exact path='/:something'>
-                  <Errors /> 
+                  <Home /> 
               </Route>
             </Switch>
-        </div>
       </Router>
     )
 }

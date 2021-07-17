@@ -1,34 +1,35 @@
 import React, {Fragment} from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Header.module.css';
+import NavItems from './NavItem/NavItem';
 
 const Headers = function() {
     return (
         <Fragment>
-            <div className={styles['header']}>
-                <img href="#!"></img>
-                <h1><center>đây là trang web</center></h1>
-            </div>
-            <div className="container">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><Link to="/" class="nav-link px-2 link-secondary">Trang chủ</Link></li>
-                    <li><Link to="/exam" class="nav-link px-2 link-dark">Đề thi</Link></li>
-                    <li><Link to="/practice" class="nav-link px-2 link-dark">Đề luyện tập</Link></li>
-                    <li><Link to="/courses" class="nav-link px-2 link-dark">Khóa học</Link></li>
-                    <li><Link to="/contact" class="nav-link px-2 link-dark">liên hệ</Link></li>
-                    <li><Link to="/quest" class="nav-link px-2 link-dark">hỏi đáp</Link></li>
-                </ul>
-
-                <div class="col-md-3 text-end">
-                    <Link className={styles['Login']} to ="/login">
-                        <button type="button" class="btn btn-outline-primary me-2">
-                            Đăng nhập
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div className="container-fluid">
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                         </button>
-                    </Link>
-                </div>
-            </header>
-            </div>
+                        <div className="collapse navbar-collapse " id="navbarScroll">
+                            <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll text-success">
+                                <NavItems route ="/" name="Trang chủ" subnav="0"/>
+                                <NavItems route ="/exam" name="Đề thi" subnav="0" />
+                                <NavItems route ="/practice" name="Bài tập" subnav="0" />
+                                <NavItems route ="/courses" name="Khoá học" subnav="1" />
+                                <NavItems route ="/contact" name="liên hệ" subnav="0" />                                
+                                <NavItems route ="/quest" name="Hỏi đáp" subnav="0" />
+                            </ul>
+                            <div className="col-md-3 text-end ">
+                                <Link to ="/login">
+                                    <button type="button" className="btn btn-outline-secondary text-light rounded-pill border border-white">
+                                        Đăng nhập
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </nav>
         </Fragment>
       )
 }
